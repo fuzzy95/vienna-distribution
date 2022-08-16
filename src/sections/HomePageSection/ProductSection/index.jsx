@@ -1,17 +1,12 @@
 import React from 'react';
 import CompHeader from '../../../components/CompHeader';
-import {
-  APP_ICONS,
-  productList,
-  productListOne,
-  productListTwo,
-} from '../../../configs/contentConfigs';
+import { APP_ICONS, productList } from '../../../configs/contentConfigs';
 import ProductImageComp from './ProductImageComp';
 
 const ProductSection = () => {
   return (
     <>
-      <div className='w-full h-[1020px] mt-28 px-5'>
+      <div className='w-full lg:h-[1020px] h-auto lg:mt-28 mt-20 px-5'>
         <div className='max-w-[1266px] mx-auto flex flex-col items-center'>
           <div className='w-full flex justify-center'>
             <CompHeader
@@ -22,7 +17,7 @@ const ProductSection = () => {
               subtitle='Range'
             />
           </div>
-          <div className='flex flex-col w-full justify-center items-center gap-[30px] mt-25 overflow-hidden'>
+          <div className='flex flex-col w-full justify-center items-center gap-[30px] lg:mt-25 mt-10 overflow-hidden'>
             <div className='lg:grid lg:grid-cols-4 hidden w-full gap-[30px]'>
               {productList.map((item, index) => (
                 <ProductImageComp
@@ -56,7 +51,7 @@ const ProductSection = () => {
             </div>*/}
           </div>
 
-          <div className='h-25 w-[30px] bg-primary flex justify-center items-center mt-[150px]' />
+          <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary flex justify-center items-center lg:mt-[150px] mt-20' />
         </div>
       </div>
     </>

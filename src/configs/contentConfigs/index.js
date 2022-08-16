@@ -9,6 +9,9 @@ export const APP_ICONS = Object.freeze({
   FACEBOOK: '/icons/Facebook.svg',
   INSTAGRAM: '/icons/Instagram.svg',
   TWITTER: '/icons/Twitter.svg',
+  FACEBOOK_SMALL: '/icons/FacebookSmall.svg',
+  TWITTER_SMALL: '/icons/TwitterSmall.svg',
+  LINKEDIN_SMALL: '/icons/LinkedinSmall.svg',
   FACEBOOK_NAV: '/icons/FacebookNav.svg',
   INSTAGRAM_NAV: '/icons/InstagramNav.svg',
   TWITTER_NAV: '/icons/TwitterNav.svg',
@@ -26,6 +29,9 @@ export const APP_IMAGES = Object.freeze({
   VODKA: '/images/vodka.png',
   LIQUOR: '/images/liquor.png',
   BITTER: '/images/bitter.png',
+  ATOMIC: '/images/atomic.png',
+  WHISKEY_BOMB: '/images/whiskeyBomb.png',
+  PARTY: '/images/party.png',
 });
 
 export const navMenuList = [
@@ -117,5 +123,29 @@ export const productList = [
   {
     img: APP_IMAGES.BITTER,
     title: 'Bitter',
+  },
+];
+
+export const newsCardContent = [
+  {
+    img: APP_IMAGES.WHISKEY_BOMB,
+    date: '20 FEB 2021',
+    heading: 'Whiskey bomb (2nd edition)',
+    details:
+      'Yeah – we’ll have free shots for everybody, so come and join us! An awesome DJ will mix like in good old times using vinyls…',
+  },
+  {
+    img: APP_IMAGES.ATOMIC,
+    date: '03 FEB 2021',
+    heading: 'Second atomic Event title',
+    details:
+      'Yeah – we’ll have free shots for everybody, so come and join us! An awesome DJ will mix like in good old times using vinyls…',
+  },
+  {
+    img: APP_IMAGES.PARTY,
+    date: '12 JAN 2021',
+    heading: 'Headshot party concert',
+    details:
+      'Yeah – we’ll have free shots for everybody, so come and join us! An awesome DJ will mix like in good old times using vinyls…',
   },
 ];

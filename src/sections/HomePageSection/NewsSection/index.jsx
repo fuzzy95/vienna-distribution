@@ -11,7 +11,7 @@ const NewsSection = () => {
         <div className=' flex justify-center items-center '>
           <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary mb-10' />
         </div>
-        <div className='max-w-[1266px] h-full mx-auto flex flex-col items-center gap-10'>
+        <div className='max-w-[1266px] h-full mx-auto flex flex-col lg:items-center items-start gap-10'>
           <div className='w-full flex justify-center'>
             <CompHeader
               icon={APP_ICONS.NEWS}

@@ -9,7 +9,7 @@ const InfoSection = () => {
         <div className='flex justify-center items-center w-full'>
           <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary flex justify-center items-center mb-10' />
         </div>
-        <div className='max-w-[1266px] mx-auto flex flex-col items-center'>
+        <div className='max-w-[1266px] mx-auto flex flex-col lg:items-center items-start'>
           <div className='w-full flex justify-center'>
             <h1 className='lg:text-[73px] text-[43px] lg:leading-[73px] leading-[43px] uppercase text-center'>
               The best spirits, <br className='lg:flex hidden' /> Wherever{' '}

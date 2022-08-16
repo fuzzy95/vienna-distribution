@@ -4,7 +4,7 @@ const AgeInputField = ({
   label,
   subLabel,
   placeholder,
-  values,
+  value,
   onChange,
   min,
   max,
@@ -21,7 +21,7 @@ const AgeInputField = ({
             className='bg-transparent border-[2px] border-white relative z-10 h-15 sm:w-44 w-24 sm:px-[30px] px-5  text-white placeholder:text-transparent focus:outline-none focus:bg-bgMain focus:placeholder:text-white transition duration-150 ease-in-out'
             type='number'
             placeholder={placeholder}
-            value={values}
+            value={value}
             onChange={onChange}
             min={min}
             max={max}

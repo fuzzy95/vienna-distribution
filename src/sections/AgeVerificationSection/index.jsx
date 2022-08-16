@@ -1,11 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import moment from 'moment';
+import { Link, useHistory } from 'react-router-dom';
 import PrimaryButton from '../../components/PrimaryButton';
 import { APP_ICONS } from '../../configs/contentConfigs';
 import routePath from '../../routes/routePath';
 import AgeInputField from './AgeInputField';
 
 const AgeVerificationSection = () => {
+  let history = useHistory();
+  const [day, setDay] = useState();
+  const [month, setMonth] = useState();
+  const [year, setYear] = useState();
+
+  const handleValidAge = () => {
+    if (moment(new Date()).format('L').split('/').pop() - year >= 21) {
+      history.push(routePath.HOME);
+    }
+
+    return '';
+  };
+
   return (
     <div className='w-screen h-screen bg-bgMain text-white flex justify-center font-futura px-10'>
       <div className='flex flex-col items-center justify-between w-full h-full md:pt-10 pt-5 pb-[10px]'>
@@ -37,16 +51,39 @@ const AgeVerificationSection = () => {
 
             {/* form */}
             <div className='flex sm:gap-[30px] gap-[21px] justify-center relative'>
-              <AgeInputField label='DAY' subLabel='(DD)' min={1} max={31} />
-              <AgeInputField label='Month' subLabel='(MM)' min='1' max='12' />
-              <AgeInputField label='year' subLabel='(YYYY)' min='1979' />
+              <AgeInputField
+                value={day}
+                onChange={e => setDay(e.target.value)}
+                label='DAY'
+                subLabel='(DD)'
+                min={1}
+                max={31}
+              />
+              <AgeInputField
+                value={month}
+                onChange={e => setMonth(e.target.value)}
+                label='Month'
+                subLabel='(MM)'
+                min='1'
+                max='12'
+              />
+              <AgeInputField
+                value={year}
+                onChange={e => setYear(e.target.value)}
+                label='year'
+                subLabel='(YYYY)'
+                min='1900'
+              />
             </div>
           </div>
 
           <div className='flex justify-center'>
-            <Link to={routePath.HOME}>
-              <PrimaryButton label='I am of legal drinking age' />
-            </Link>
+            {/* <Link to={routePath.HOME}> */}
+            <PrimaryButton
+              onClick={handleValidAge}
+              label='I am of legal drinking age'
+            />
+            {/* </Link> */}
           </div>
         </div>
 

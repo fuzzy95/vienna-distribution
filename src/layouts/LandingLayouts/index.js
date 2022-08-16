@@ -7,7 +7,7 @@ const LandingLayouts = ({ children }) => {
     <>
       <Navbar />
 
-      <div>{children}</div>
+      <div className='bg-bgMain'>{children}</div>
 
       <Footer />
     </>

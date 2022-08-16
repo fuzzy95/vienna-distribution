@@ -146,6 +146,9 @@ module.exports = {
       94: '23.5rem',
       95: '23.75rem',
       96: '24rem',
+      97: '24.25rem',
+      98: '24.5rem',
+      99: '24.75rem',
       100: '25rem',
       104: '26rem',
       108: '27rem',
@@ -419,6 +422,7 @@ module.exports = {
     },
     fontFamily: {
       futura: ['Futura PT', 'sans-serif'],
+      futuraLight: ['Futura PT Light', 'sans-serif'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

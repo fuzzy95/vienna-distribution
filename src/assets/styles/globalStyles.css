@@ -47,3 +47,7 @@ input[type='number'] {
 .imgGradient {
   background: transparent linear-gradient(180deg, #0c0c0c00 0%, #0c0c0c 100%);
 }
+
+.polygonBg {
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+}

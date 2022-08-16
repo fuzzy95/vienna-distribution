@@ -7,7 +7,7 @@ import NewsCardComp from './NewsCardComp';
 const NewsSection = () => {
   return (
     <>
-      <div className='w-full lg:h-[1120px] h-auto px-5 lg:mt-[105px] mt-10'>
+      <div className='w-full lg:h-[1120px] h-auto px-5 lg:mt-[105px] mt-10 overflow-hidden'>
         <div className=' flex justify-center items-center '>
           <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary mb-10' />
         </div>

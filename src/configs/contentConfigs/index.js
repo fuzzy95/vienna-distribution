@@ -45,6 +45,9 @@ export const APP_IMAGES = Object.freeze({
   G_EIGHT: '/images/gallery8.png',
   G_NINE: '/images/gallery9.png',
   G_TEN: '/images/gallery10.png',
+  OTHER_ONE: '/images/whiskey_Image_minify.png',
+  OTHER_TWO: '/images/whiskey_Image_minify-1.png',
+  OTHER_THREE: '/images/whiskey_Image_minify-2.png',
 });
 
 export const navMenuList = [

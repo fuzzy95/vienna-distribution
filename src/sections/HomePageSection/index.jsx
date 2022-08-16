@@ -4,6 +4,7 @@ import BrandGallerySection from './BrandGallerySection';
 import HeroSection from './HeroSection';
 import InfoSection from './InfoSection';
 import NewsSection from './NewsSection';
+import OtherSection from './OtherSection';
 import ProductSection from './ProductSection';
 
 const HomePageSection = () => {
@@ -15,6 +16,7 @@ const HomePageSection = () => {
       <NewsSection />
       <BrandGallerySection />
       <InfoSection />
+      <OtherSection />
     </>
   );
 };

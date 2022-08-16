@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { APP_ICONS } from '../../../configs/contentConfigs';
-import { Icon } from '@iconify/react';
 import InfoComp from './InfoComp';
 
 const InfoSection = () => {
   return (
     <>
-      <div className='w-full lg:h-[1090px] h-auto lg:mt-[150px] mt-20 px-5'>
+      <div className='w-full lg:h-[1222px] h-auto lg:mt-[150px] mt-20 px-5 overflow-hidden'>
         <div className='flex justify-center items-center w-full'>
           <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary flex justify-center items-center mb-10' />
         </div>

@@ -18,6 +18,9 @@ export const APP_ICONS = Object.freeze({
   PRODUCT: '/icons/productIcon.svg',
   NEWS: '/icons/newsIcon.svg',
   BRAND_GALLERY: '/icons/brandGalleryIcon.svg',
+  GASTRONOMY: '/icons/gastronomy.svg',
+  RETAIL: '/icons/retail.svg',
+  EVENTS: '/icons/events.svg',
 });
 
 export const APP_IMAGES = Object.freeze({

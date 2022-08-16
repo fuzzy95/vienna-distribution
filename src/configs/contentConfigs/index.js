@@ -32,6 +32,16 @@ export const APP_IMAGES = Object.freeze({
   ATOMIC: '/images/atomic.png',
   WHISKEY_BOMB: '/images/whiskeyBomb.png',
   PARTY: '/images/party.png',
+  G_ONE: '/images/gallery1.png',
+  G_TWO: '/images/gallery2.png',
+  G_THREE: '/images/gallery3.png',
+  G_FOUR: '/images/gallery4.png',
+  G_FIVE: '/images/gallery5.png',
+  G_SIX: '/images/gallery6.png',
+  G_SEVEN: '/images/gallery7.png',
+  G_EIGHT: '/images/gallery8.png',
+  G_NINE: '/images/gallery9.png',
+  G_TEN: '/images/gallery10.png',
 });
 
 export const navMenuList = [

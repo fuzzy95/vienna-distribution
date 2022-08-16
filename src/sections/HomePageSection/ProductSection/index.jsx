@@ -6,7 +6,7 @@ import ProductImageComp from './ProductImageComp';
 const ProductSection = () => {
   return (
     <>
-      <div className='w-full lg:h-[1020px] h-auto lg:mt-28 mt-20 px-5'>
+      <div className='w-full lg:h-[790px] h-auto lg:mt-28 mt-20 px-5'>
         <div className='max-w-[1266px] mx-auto flex flex-col items-center'>
           <div className='w-full flex justify-center'>
             <CompHeader
@@ -39,19 +39,7 @@ const ProductSection = () => {
                 />
               ))}
             </div>
-            {/* <div className='flex justify-start w-full gap-[30px]'>
-              {productListTwo.map((item, index) => (
-                <ProductImageComp
-                  key={index}
-                  image={item.img}
-                  title={item.title}
-                  to='#'
-                />
-              ))} 
-            </div>*/}
           </div>
-
-          <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary flex justify-center items-center lg:mt-[150px] mt-20' />
         </div>
       </div>
     </>

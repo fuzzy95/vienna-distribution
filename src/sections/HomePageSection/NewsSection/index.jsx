@@ -7,7 +7,10 @@ import NewsCardComp from './NewsCardComp';
 const NewsSection = () => {
   return (
     <>
-      <div className='w-full lg:h-[1120px] h-auto lg:mt-14 mt-10 px-5'>
+      <div className='w-full lg:h-[1120px] h-auto px-5 lg:mt-[105px] mt-10'>
+        <div className=' flex justify-center items-center '>
+          <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary mb-10' />
+        </div>
         <div className='max-w-[1266px] h-full mx-auto flex flex-col items-center gap-10'>
           <div className='w-full flex justify-center'>
             <CompHeader
@@ -45,8 +48,6 @@ const NewsSection = () => {
           <div className='lg:mt-15 mt-10'>
             <PrimaryButton label='Read more Stories on our news page' />
           </div>
-
-          <div className='lg:h-25 h-15 lg:w-[30px] w-5 bg-primary flex justify-center items-center lg:mt-[150px] mt-20' />
         </div>
       </div>
     </>

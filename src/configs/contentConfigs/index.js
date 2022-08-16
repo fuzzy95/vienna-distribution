@@ -55,6 +55,40 @@ export const navMenuList = [
   },
 ];
 
+export const productListOne = [
+  {
+    img: APP_IMAGES.BAIJU,
+    title: 'Baiju',
+  },
+  {
+    img: APP_IMAGES.RUM,
+    title: 'Rum',
+  },
+  {
+    img: APP_IMAGES.WHISKEY,
+    title: 'Whiskey',
+  },
+  {
+    img: APP_IMAGES.GIN,
+    title: 'Gin',
+  },
+];
+
+export const productListTwo = [
+  {
+    img: APP_IMAGES.VODKA,
+    title: 'Vodka',
+  },
+  {
+    img: APP_IMAGES.LIQUOR,
+    title: 'Liquor',
+  },
+  {
+    img: APP_IMAGES.BITTER,
+    title: 'Bitter',
+  },
+];
+
 export const productList = [
   {
     img: APP_IMAGES.BAIJU,

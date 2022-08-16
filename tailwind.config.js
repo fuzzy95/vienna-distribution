@@ -139,6 +139,8 @@ module.exports = {
       70: '17.5rem',
       71: '17.75rem',
       72: '18rem',
+      73: '18.25rem',
+      73.5: '18.375rem',
       80: '20rem',
       88: '22rem',
       92: '23rem',
@@ -1000,5 +1002,5 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

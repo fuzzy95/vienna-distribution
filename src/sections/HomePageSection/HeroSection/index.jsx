@@ -4,7 +4,7 @@ import PrimaryButton from '../../../components/PrimaryButton';
 const HeroSection = () => {
   return (
     <>
-      <div className='w-full xl:h-[1107px] h-screen xl:-mt-45 lg:-mt-30 -mt-[62px] bg-bgMain bg_image relative '>
+      <div className='w-full xl:h-[1107px] h-screen  bg-bgMain bg_image relative '>
         <div className='absolute md:bg-transparent bg-[#00000091] h-full w-full' />
         <div className='relative z-10 mx-auto max-w-[1348px] flex flex-col items-start justify-center xl:h-full h-screen px-4'>
           {/* hero text */}

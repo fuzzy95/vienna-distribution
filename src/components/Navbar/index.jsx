@@ -6,57 +6,54 @@ import { APP_ICONS, navMenuList } from '../../configs/contentConfigs';
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
-  const [clicked, setClicked] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const menuVariants = {
-    opened: {
-      right: 0,
-      transition: {
-        when: 'beforeChildren',
-        staggerChildren: 0.5,
-      },
-    },
-    closed: {
-      right: '100%',
-    },
+  const changeNavScrolled = () => {
+    if (window.scrollY >= 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
   };
-
-  const linkVariants = {
-    opened: {
-      opacity: 1,
-      x: '100%',
-    },
-    closed: {
-      opacity: 0,
-      x: 0,
-    },
-  };
+  window.addEventListener('scroll', changeNavScrolled);
 
   return (
     <>
-      <div className='bg-transparent nav_transparent_bg text-white flex items-center xl:h-45 lg:h-30 h-[62px] w-full relative z-40'>
-        <div className='mx-auto max-w-[1238px] flex items-center justify-between w-full px-4'>
-          <div className='lg:flex hidden'>
-            <img
-              className='xl:flex hidden'
-              width='149px'
-              height='130px'
-              src={APP_ICONS.LOGO}
-              alt=''
-            />
-            <img
-              className='xl:hidden lg:flex hidden '
-              width='240px'
-              height='50px'
-              src={APP_ICONS.LOGO_SCROLL_HOME}
-              alt=''
-            />
-            <img
-              className='lg:hidden flex'
-              src={APP_ICONS.LOGO_MOB_HOME}
-              alt=''
-            />
-          </div>
+      <div
+        className={`${
+          !scrolled
+            ? 'bg-transparent nav_transparent_bg text-white flex items-center xl:h-45 lg:h-30 h-[62px] w-full fixed z-40 top-0'
+            : 'bg-bgMain text-white flex items-center h-25 w-full fixed z-40 top-0'
+        }`}
+      >
+        <div className='mx-auto max-w-[1238px] flex items-center justify-between w-full xl:px-0 px-4'>
+          {!scrolled ? (
+            <div className='lg:flex hidden'>
+              <img
+                className='xl:flex hidden'
+                width='149px'
+                height='130px'
+                src={APP_ICONS.LOGO}
+                alt=''
+              />
+              <img
+                className='xl:hidden lg:flex hidden '
+                width='240px'
+                height='50px'
+                src={APP_ICONS.LOGO_SCROLL_HOME}
+                alt=''
+              />
+              <img
+                className='lg:hidden flex'
+                src={APP_ICONS.LOGO_MOB_HOME}
+                alt=''
+              />
+            </div>
+          ) : (
+            <div className='lg:flex hidden'>
+              <img className='flex' src={APP_ICONS.LOGO_MOB_HOME} alt='' />
+            </div>
+          )}
           <div className='lg:hidden flex'>
             <img className='flex' src={APP_ICONS.LOGO_MOB_HOME} alt='' />
           </div>
@@ -106,7 +103,7 @@ const Navbar = () => {
             type: 'tween',
             default: { duration: 0.3 },
           }}
-          className='h-screen w-full fixed z-50 bg-bgMain -mt-[62px] overflow-y-hidden pl-12 pr-5 pt-5'
+          className='h-screen w-full fixed z-50 bg-bgMain overflow-y-hidden pl-12 pr-5 pt-5'
         >
           <div className='w-full flex justify-end'>
             <button onClick={() => setOpenNav(false)}>
